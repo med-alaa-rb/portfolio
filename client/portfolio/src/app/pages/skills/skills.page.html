@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="text-align: end"
+    >
+    <p>Skills</p>
+      <strong> "{{user}}"</strong></ion-title
+    >
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let item of arr">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>{{item.title}}</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <img src="{{item.img}}" style="height: 30px; width: 80px; background-color: transparent;"/>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

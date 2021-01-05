@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="text-align: end"><strong> "{{user}}"</strong></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen] = "true">
+  <div class="cont">
+  <div>
+    <h3>title</h3>
+  </div>
+  <div>
+    <h3>demo</h3>
+    <ion-content [fullscreen]="true">
+      <h4>Play Offline Video</h4>
+      <ion-button expand="full" fill="outline" (click)="playLocalVideo()">Offline Video</ion-button>
+    
+    
+      <h4>Play Online Video</h4>
+      <ion-button expand="full" fill="outline" (click)="playRemoteVideo()">Online Video</ion-button>
+    
+    
+      <h4>Close Player</h4>
+      <ion-button expand="full" fill="outline" (click)="closeVideo()">Stop Video</ion-button>
+    </ion-content>
+  </div>
+  <div>
+    <button
+      type="button"
+      class="btn btn-warning"
+      data-toggle="collapse"
+      data-target="#des"
+    >
+      description
+    </button>
+    <div id="des" class="collapse">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+    </div>
+  </div>
+  <div>
+    <button
+      type="button"
+      class="btn btn-warning"
+      data-toggle="collapse"
+      data-target="#task"
+    >
+      major tasks
+    </button>
+    <div id="task" class="collapse">
+      <ion-list>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+      </ion-list>
+    </div>
+  </div>
+  <div class="last">
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="collapse"
+      data-target="#inp"
+    >
+      leave a comment ❤
+    </button>
+    <div id="inp" class="collapse">
+      <ion-input placeholder="Enter Input"></ion-input>
+    </div>
+  </div>
+</div>
+</ion-content>

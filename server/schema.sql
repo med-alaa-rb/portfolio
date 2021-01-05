@@ -1,0 +1,17 @@
+DROP DATABASE IF EXISTS portfoliodb;
+CREATE DATABASE portfoliodb;
+USE portfoliodb;
+
+CREATE TABLE users (
+    id INT(4) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE comments (
+    id INT(4) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    text VARCHAR(300) 
+);
+CREATE TABLE likes (
+    id INT(4) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    userId INT(4) NOT NULL
+);
