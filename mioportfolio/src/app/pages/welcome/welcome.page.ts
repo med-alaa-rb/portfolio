@@ -13,5 +13,6 @@ export class WelcomePage {
   submitName(el) {
     el.length == 0 ? alert("kindly add your name") : el
     this._http.myname = el.toUpperCase();
+    this.router.navigateByUrl('home')
   }
 }
